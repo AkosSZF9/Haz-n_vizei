@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+}
+
+header {
+    background-color: #1e2a37;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header a {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+header a:hover {
+    color: #ff7f50;
+}
+
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2a3a52;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.item img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-height: 150px;
+
+}
+
+
+.item h3 {
+    color: #3a4a6a;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 1rem;
+    color: #636363;
+}
+
+
+#tavak,
+#folyok {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+@media (max-width: 1024px) {
+
+    #tavak,
+    #folyok {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    #tavak,
+    #folyok {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+
+    #tavak,
+    #folyok {
+        grid-template-columns: 1fr;
+    }
+}
